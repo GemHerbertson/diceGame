@@ -1,16 +1,21 @@
 // HTML declarations 
 
-const rollButton = document.getElementById("roll");
+
+// const playerId = document.getElementById("playerId")
 const playerScore = document.getElementById("playerScore");
 const totalScore = document.getElementById("totalScore");
 const diceImage = document.getElementById("diceImage");
 const scoreMessage = document.getElementById("scoreMessage");
+const rollButton = document.getElementById("roll");
+
+
 // const resetButton = document.getElementById("reset");
 
 diceImage.style.visibility = "hidden";
 
 let numberRolled;
 let pointScored = 0;
+// let playerTurn = true;
 
 // Function declarations
 
@@ -28,7 +33,7 @@ const cummulativeScore = () => {
 const winOrLose = () => {
     // cummulativeScore()
     if (numberRolled == 1) {
-        scoreMessage.textContent = "You Lose!";
+        scoreMessage.textContent = "You Lose! Next player step up...";
         rollButton.textContent = "Play again";
         pointScored = 0;
     } else if (pointScored >= 20) {
@@ -41,18 +46,23 @@ const winOrLose = () => {
     }
 }
 
+// const activeplayer = () => {
+//     if (playerTurn) {
+//         playerId.textContent = "Player One"
+//         playerTurn = false
+//     } else 
+//         playerId.textContent = "Player Two"
+//         playerOneTurn = true
+// }
+
 rollButton.addEventListener("click", () => {
     diceRoll()
-    playerScore.textContent = numberRolled
-    totalScore.textContent = pointScored += numberRolled
+    playerScore.textContent = `You have rolled ${numberRolled}`
+    totalScore.textContent = `Your score is ${pointScored += numberRolled}`
     diceImage.style.visibility = "visible";
     diceImage.src = `img/dice${numberRolled}.png`;
     winOrLose()
 })
-
-// resetButton.addEventListener("click", () => {
-//     if 
-// })
 
 // diceRoll()
 // cummulativeScore()

@@ -1,1 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0%;
+}
+
+body {
+    background-image: url("./img/table.jpg");
+    background-size: cover;
+    text-align: center;
+}
+
+.gameBody {
+    text-align: center;
+}
+p {
+    color: rgb(245, 245, 76);
+    font-family: 'Crimson Text', serif, ;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+img {
+    opacity: 0.9;
+}
+
+button {
+    background-color: transparent;
+    height: 2em;
+    width: 7em;
+    color: white;
+    font-family: 'Crimson Text', serif, ;
+    font-size: xx-large;
+    font-weight: bold;
+    border: none;
+}
+
+button:hover {
+    color: rgb(241, 80, 80);
+}
 

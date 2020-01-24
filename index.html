@@ -8,17 +8,28 @@
     <title>Dice Game</title>
 </head>
 <body>
-    
-    <!-- <p id=playerId>Player One</p> -->
-    <div class=gameBody>
-    
-    <p id="playerScore"></p>
-    <p id="totalScore"></p>
-    <img id="diceImage" src="img/dice1.png" alt="dice image">
 
-    <p id="scoreMessage"></p>
-    <button id="roll">Start game</button>
+<h1>TWENTY ONE</h1>
+
+    <div class=playerOne>
+        <div class=playerOneInterior>
+            <p id="playerScore"></p>
+            <img id="diceImage" src="img/dice1.png" alt="dice image">
+            <p id="totalScore"></p>
+            <p id="scoreMessage"></p>
+        </div>  
     </div>
+
+    <div class=playerTwo>
+        <div id=playerTwoInterior>
+            <p id="playerScore"></p>
+            <img id="diceImage" src="img/dice1.png" alt="dice image">
+            <p id="totalScore"></p>
+            <p id="scoreMessage"></p>
+        </div>
+    </div>
+
+    <button id="roll">Start game</button>
 
     <script src="script.js"></script>
 </body>

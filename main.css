@@ -6,37 +6,100 @@
 }
 
 body {
-    background-image: url("./img/table.jpg");
+    background-image: url("./img/download.jpg");
     background-size: cover;
-    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
-.gameBody {
+h1 {
+    color: rgb(100, 100, 100);
     text-align: center;
+    width: 100%;
+    margin-top: 2.5%;
+    font-size: 5em;
+    opacity: 0.8;
 }
+
+h2 {
+    color: rgb(100, 100, 100);
+    text-align: center;
+    /* width: 100%; */
+    font-size: 2em;
+    opacity: 0.8;
+}
+
+.playerOne {
+    background-color: rgb(238, 213, 171);
+    border-radius: 10%;
+    opacity: 0.8;
+    width: 45%;
+    height: 65%;
+    margin: 2%;
+    border: 0.3em solid rgb(100, 100, 100, 0.8);
+    display: flex;
+}
+
+.playerOneInside {
+    justify-content: center;
+    align-content: center;
+}
+
+.playerTwo {
+    background-color: rgb(238, 213, 171);
+    border-radius: 10%;
+    opacity: 0.8;
+    width: 45%;
+    height: 65%;
+    margin: 2%;
+    border: 0.3em solid rgb(100, 100, 100, 0.8);
+    display: flex;
+}
+
+.playerTwoInside {
+    justify-content: center;
+    align-content: center;
+}
+
 p {
-    color: rgb(245, 245, 76);
+    color: rgb(255, 255, 255);
     font-family: 'Crimson Text', serif, ;
     font-size: xx-large;
     font-weight: bold;
+    flex-grow: 1;
+}
+
+#playerScore {
+    opacity: 1.0;
+    padding: 1em;
 }
 
 img {
-    opacity: 0.9;
+    height: 12.5em;
+    width: 12.5em;
+    text-align: center;
 }
 
 button {
     background-color: transparent;
     height: 2em;
     width: 7em;
-    color: white;
+    color: rgb(100, 100, 100 );
     font-family: 'Crimson Text', serif, ;
     font-size: xx-large;
     font-weight: bold;
     border: none;
+    flex-grow: 2;
 }
 
-button:hover {
-    color: rgb(241, 80, 80);
+button:hover{
+    cursor: pointer;
+    color: rgb(60, 60, 60);
 }
 
+button:focus{
+    outline: none;
+}
